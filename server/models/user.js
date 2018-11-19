@@ -6,6 +6,22 @@ var User = mongoose.model('Users',{
         required: true,
         minlength: 1,
         trim: true
+    },
+    firstName: {
+        type: String,
+        required: true,
+        minlength: 1,
+        trim: true
+    },
+    lastName: {
+        type: String,
+        required: true,
+        minlength: 1,
+        trim: true
+    },
+    age:{
+        type: Number,
+        defualts:18
     }
 });
 
